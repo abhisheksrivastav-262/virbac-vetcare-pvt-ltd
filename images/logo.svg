@@ -1,25 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%">
-  <!-- Icon: Green/Gold Veterinary Cross & Leaf Emblem -->
-  <g transform="translate(10, 10)">
-    <!-- Outer gold ring -->
-    <circle cx="50" cy="50" r="46" fill="none" stroke="#d97706" stroke-width="2.5" opacity="0.85"/>
-    <!-- Inner soft green circle -->
-    <circle cx="50" cy="50" r="41" fill="#064e3b" />
-    
-    <!-- White Vet Cross (softly rounded) -->
-    <path d="M 45 28 C 45 26 47 25 50 25 C 53 25 55 26 55 28 V 45 H 72 C 74 45 75 47 75 50 C 75 53 74 55 72 55 H 55 V 72 C 55 74 53 75 50 75 C 47 75 45 74 45 72 V 55 H 28 C 26 55 25 53 25 50 C 25 47 26 45 28 45 H 45 Z" fill="#ffffff" />
-    
-    <!-- Gold leaf representing natural healthcare & wellness -->
-    <path d="M 50 50 C 65 30 75 40 70 58 C 65 70 50 68 50 50 Z" fill="#d97706" opacity="0.9" />
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- Outer gold ring -->
+  <circle cx="50" cy="50" r="46" fill="none" stroke="#d97706" stroke-width="2.5" opacity="0.85"/>
+  <!-- Inner soft green circle -->
+  <circle cx="50" cy="50" r="41" fill="#064e3b" />
   
-  <!-- Text: Brand Name & Subtitle -->
-  <g transform="translate(125, 10)">
-    <!-- VIRBAC VETCARE -->
-    <text x="0" y="44" font-family="'Plus Jakarta Sans', 'Inter', 'Helvetica', sans-serif" font-weight="800" font-size="28" fill="#064e3b" letter-spacing="1">VIRBAC VETCARE</text>
-    <!-- PVT LTD in gold -->
-    <text x="272" y="44" font-family="'Plus Jakarta Sans', 'Inter', 'Helvetica', sans-serif" font-weight="700" font-size="20" fill="#d97706" letter-spacing="1">PVT LTD</text>
-    <!-- Patna, Bihar Subtext -->
-    <text x="0" y="74" font-family="'Inter', 'Helvetica', sans-serif" font-weight="600" font-size="13" fill="#64748b" letter-spacing="2.5">VETERINARY HEALTHCARE • PATNA</text>
-  </g>
+  <!-- White Vet Cross (softly rounded) -->
+  <path d="M 45 28 C 45 26 47 25 50 25 C 53 25 55 26 55 28 V 45 H 72 C 74 45 75 47 75 50 C 75 53 74 55 72 55 H 55 V 72 C 55 74 53 75 50 75 C 47 75 45 74 45 72 V 55 H 28 C 26 55 25 53 25 50 C 25 47 26 45 28 45 H 45 Z" fill="#ffffff" />
+  
+  <!-- Gold leaf representing natural healthcare & wellness -->
+  <path d="M 50 50 C 65 30 75 40 70 58 C 65 70 50 68 50 50 Z" fill="#d97706" opacity="0.9" />
 </svg>

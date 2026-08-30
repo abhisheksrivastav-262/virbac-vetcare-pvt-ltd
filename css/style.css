@@ -310,12 +310,44 @@ button, input, select, textarea {
 .logo-link {
   display: flex;
   align-items: center;
-  height: 56px; /* Increased from 48px to 56px for higher visibility and premium feel */
+  gap: clamp(0.75rem, 1.8vw, 1.2rem);
+  height: clamp(52px, 5.5vw, 64px);
+  text-decoration: none;
+  transition: height var(--transition-fast) ease;
 }
 
 .logo-img {
   height: 100%;
   width: auto;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+  display: block;
+}
+
+.logo-text {
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 2.2vw, 24px);
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: middle;
+  transition: font-size var(--transition-fast) ease, color var(--transition-fast) ease;
+}
+
+.logo-text-accent {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.header.shrink .logo-link {
+  height: clamp(46px, 5vw, 50px);
+}
+
+.header.shrink .logo-text {
+  font-size: clamp(18px, 1.8vw, 20px);
 }
 
 /* Navigation Menu */
@@ -1415,12 +1447,41 @@ textarea.form-input {
 }
 
 .footer-brand .logo-link {
-  height: 64px; /* Increased from 52px to 64px for higher prominence in footer */
+  height: clamp(55px, 6vw, 70px); /* Desktop target: 55-70px */
   margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .footer-brand .logo-img {
-  filter: brightness(0) invert(1);
+  height: 100%;
+  width: auto;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+  filter: brightness(0) invert(1); /* High contrast white for dark green footer */
+}
+
+.footer-brand .logo-text {
+  color: #ffffff;
+}
+
+.footer-brand .logo-text-accent {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .footer-brand .logo-link {
+    height: clamp(45px, 5vw, 55px) !important; /* Mobile target: 45-55px */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-brand .logo-link {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+  }
 }
 
 .footer-brand p {
@@ -1637,6 +1698,14 @@ textarea.form-input {
 }
 
 @media (max-width: 768px) {
+  .logo-link {
+    height: clamp(42px, 5vw, 50px) !important;
+  }
+  
+  .logo-text {
+    font-size: clamp(15px, 2.5vw, 18px) !important;
+  }
+
   /* Prevent iOS zoom on form inputs (16px threshold) */
   .form-input, select.form-input, textarea.form-input {
     font-size: 16px !important;
