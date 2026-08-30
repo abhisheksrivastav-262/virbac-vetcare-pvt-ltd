@@ -1459,7 +1459,6 @@ textarea.form-input {
   width: auto;
   aspect-ratio: 1 / 1;
   flex-shrink: 0;
-  filter: brightness(0) invert(1); /* High contrast white for dark green footer */
 }
 
 .footer-brand .logo-text {
