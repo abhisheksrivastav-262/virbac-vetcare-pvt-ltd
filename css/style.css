@@ -1478,9 +1478,14 @@ textarea.form-input {
 
 @media (max-width: 480px) {
   .footer-brand .logo-link {
+    height: auto !important;
     flex-direction: column !important;
     align-items: flex-start !important;
     gap: 0.75rem !important;
+  }
+  .footer-brand .logo-img {
+    height: 50px !important;
+    width: 50px !important;
   }
 }
 
@@ -1699,11 +1704,12 @@ textarea.form-input {
 
 @media (max-width: 768px) {
   .logo-link {
-    height: clamp(42px, 5vw, 50px) !important;
+    height: clamp(42px, 5vw, 48px) !important;
+    gap: 0.6rem !important;
   }
   
   .logo-text {
-    font-size: clamp(15px, 2.5vw, 18px) !important;
+    font-size: clamp(14px, 3.2vw, 16px) !important;
   }
 
   /* Prevent iOS zoom on form inputs (16px threshold) */
@@ -1758,7 +1764,13 @@ textarea.form-input {
   }
   
   .logo-link {
-    height: 44px !important; /* Increased from 40px to 44px for clear visibility on mobile */
+    height: 42px !important;
+    gap: 0.5rem !important;
+  }
+  
+  .logo-text {
+    font-size: clamp(14px, 3.8vw, 15px) !important;
+    letter-spacing: 0.1px !important;
   }
   
   .section {
